@@ -3,12 +3,12 @@ import React from "react";
 function Card(props){
   return (<div className="card">
       <div className="top">
-        <h2>{props.name}</h2>
-        <img src= {props.img} alt="immg" />
+        <h2 className="name">{props.name}</h2>
+        <img className ="circle-img" src= {props.img} alt="immg" />
       </div>
       <div className= "bottom">
-        <p>{props.tel}</p>
-        <p>{props.mail}</p>
+        <p className="info">{props.tel}</p>
+        <p className="info">{props.mail}</p>
       </div>
   </div>
   );
